@@ -1,4 +1,5 @@
 import { defineConfig, devices } from '@playwright/test';
+import type { ConfigType } from '@playwright/test';
 
 // Base origin for the application under test
 const BASE_URL = 'https://the-internet.herokuapp.com';
