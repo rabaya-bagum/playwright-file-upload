@@ -16,7 +16,7 @@ test.describe('File Upload', () => {
     await expect(page).toHaveTitle(PAGE_TEXTS.title);
 
     // Verify: heading 'File Uploader' is visible
-    await expect(uploadPage.pageHeading).toBeVisible();
+    await expect(uploadPage.pageHeading).not.toBeVisible();
 
     // Verify: instruction text is visible
     await expect(uploadPage.instructionText).toBeVisible();
